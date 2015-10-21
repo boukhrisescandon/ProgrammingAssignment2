@@ -1,6 +1,6 @@
 ## This pair of functions will cache the inverse of a matrix.
 ## R Programming Course - rprog-033
-## October 20, 2015
+## October 21, 2015
 
 ## The makeCacheMatrix function creates a special "matrix" object that can cache its inverse.
 
