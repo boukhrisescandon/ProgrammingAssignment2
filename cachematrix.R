@@ -5,16 +5,14 @@
 ## The makeCacheMatrix function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-  ##Invert the matrix
-  x_inv = solve(x)
   m <- NULL
   set <- function(y) {
-    x_inv <<- y
+    x <<- y
     m <<- NULL
   }
-  get <- function() x_inv
-  setmean <- function(mean) m <<- mean
-  getmean <- function() m
+  get <- function() x
+  setinvert <- function(solve) m <<- solve
+  getinvert <- function() m
   list(set = set, get = get,
        setmean = setmean,
        getmean = getmean)
